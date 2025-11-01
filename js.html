@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <h1>
+        Калькулятор
+    </h1>
+        <h2>1-ый вариант</h2>
+<script>
+    
+    let num1 = +prompt('Введите первое число'); 
+    typeof(num1) == 'number'? console.log(num1): console.log("Некорректный ввод, введите повторно");
+    let num2 = +prompt('Введите второе число'); 
+    typeof(num2) == 'number'? console.log(num2): console.log("Некорректный ввод, введите повторно");
+    let operator = prompt('Введите один из операторов +, -, *, /, % ');
+
+   /*Операция сложения*/  
+    if  (operator === '+') {
+    console.log(result = num1 + num2)
+    }
+   /* Операция вычитания*/
+     if  (operator === '-') {
+    console.log(result = num1 - num2)
+    }
+
+    /*Операция умножения*/
+     if  (operator === '*') {
+    console.log(result = num1 * num2)
+    }
+    /* Операция деления*/
+     if  (operator === '/') {
+    console.log(result = num1 / num2)
+        if (num2 !=0){
+        console.log(result = num1 / num2) 
+        }
+        else {
+        console.log('На ноль делить нельзя')
+        }
+    }  
+     /* Операция деления с остатком */  
+     if  (operator === '%') {
+    console.log(result = num1 % num2)
+        if (num2 !=0){
+        console.log(result = num1 / num2) 
+        }
+        else {
+        console.log('На ноль делить нельзя')
+        }
+    }
+    /* Операция возведения в степень. Здесь же можно извлечь корень, для этого второе число вводим ввиде 0.5- корень квадратный, 0.333- корень кубический и т.д.*/   
+     if  (operator === '**') {
+    console.log(result = num1 ** num2)
+    }
+
+</script>
+</body>
+</html>
